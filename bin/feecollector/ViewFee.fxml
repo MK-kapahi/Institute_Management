@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="feecollector.ViewFeeController">
+   <children>
+      <TextField fx:id="txtid" layoutX="358.0" layoutY="88.0" promptText="Traniee-Id" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" />
+      <Label layoutX="144.0" layoutY="90.0" prefHeight="22.0" prefWidth="66.0" text="Enter Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttech" layoutX="358.0" layoutY="151.0" promptText="Technology" style="-fx-background-color: white; -fx-border-radius: 10px; -fx-border-color: black;" />
+      <TextField fx:id="txttime" layoutX="358.0" layoutY="216.0" promptText="Batchtime" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" />
+      <TextField fx:id="txtfee" layoutX="358.0" layoutY="279.0" promptText="TotalFee" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" />
+      <TextField fx:id="txtad" layoutX="358.0" layoutY="350.0" promptText="AdvanceFee" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" />
+      <TextField fx:id="txtbal" layoutX="358.0" layoutY="416.0" promptText="Balance" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" />
+      <Line endX="247.80001831054688" layoutX="341.0" layoutY="494.0" startX="-230.60000610351562" />
+      <TextField fx:id="txtamt" layoutX="358.0" layoutY="539.0" promptText="Received Amount" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" />
+      <Button layoutX="110.0" layoutY="616.0" mnemonicParsing="false" onAction="#doUpdate" style="-fx-background-color: black;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="555.0" layoutY="82.0" mnemonicParsing="false" onAction="#doSearch" style="-fx-background-color: black;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="337.0" layoutY="616.0" mnemonicParsing="false" onAction="#doClear" style="-fx-background-color: black;" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="136.0" layoutY="151.0" text="Technology">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="216.0" text="Batch Time">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="279.0" text="Total fee">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="350.0" text="Advance">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="416.0" text="Balance">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="539.0" prefHeight="18.0" prefWidth="78.0" text="Recieved">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="68.0" prefWidth="700.0" text="Fee Collector">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button layoutX="521.0" layoutY="616.0" mnemonicParsing="false" onAction="#goback" style="-fx-background-color: black;" text="Return" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

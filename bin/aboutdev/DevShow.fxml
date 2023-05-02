@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="700.0" minWidth="700.0" prefHeight="706.0" prefWidth="700.0" style="-fx-background-color: whitw;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="aboutdev.DevShowController">
+   <children>
+      <Line endX="282.0" endY="1.0" layoutX="350.0" layoutY="349.0" startX="-292.8999938964844" startY="1.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="700.0" style="-fx-background-color: black;" text="About Developer" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="93.0" prefHeight="40.0" prefWidth="219.0" text="Developed By :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="148.0" prefHeight="129.0" prefWidth="219.0" text="Muskan">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="372.0" prefHeight="36.0" prefWidth="282.0" text="Under The Guidence Of :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="163.0" layoutY="469.0" prefHeight="194.0" prefWidth="390.0" text="20 Years experience in Training &amp; Development. Founder of realJavaOnline.com, loves coding in Java(J2SE, J2EE), C++,PHP, Python, AngularJS, Android,MERN Stack(MongoDB,Express,ReactJS,NodeJS). #Email : bcebti@gmail.com #Contact : 98722-46056" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="435.0" prefHeight="30.0" prefWidth="184.0" text="Rajesh Bansal">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" minHeight="700.0" minWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="batchmanager.ViewBatchManagerController">
+   <children>
+      <ImageView fx:id="imgpic" fitHeight="150.0" fitWidth="148.0" layoutX="24.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../notebook%20(1).png" />
+         </image></ImageView>
+      <Button layoutX="80.0" layoutY="350.0" mnemonicParsing="false" onAction="#doBrowse" style="-fx-background-color: black;" text="Browse" textFill="WHITE" />
+      <Button layoutX="567.0" layoutY="132.0" mnemonicParsing="false" onAction="#doSearch" style="-fx-background-color: black;" text="Search" textFill="WHITE" />
+      <ComboBox fx:id="Combobatch" editable="true" layoutX="336.0" layoutY="134.0" prefHeight="26.0" prefWidth="179.0" promptText="selectBatch" style="-fx-background-color: white;" />
+      <Label layoutX="201.0" layoutY="134.0" prefHeight="26.0" prefWidth="71.0" text="Batches">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <DatePicker fx:id="txtdate" layoutX="336.0" layoutY="208.0" promptText="Start Date" style="-fx-background-color: white;" />
+      <Label layoutX="212.0" layoutY="207.0" prefHeight="26.0" prefWidth="50.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="212.0" layoutY="289.0" prefHeight="26.0" prefWidth="50.0" text="Time">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ComboBox fx:id="txttime" editable="true" layoutX="336.0" layoutY="290.0" prefHeight="26.0" prefWidth="179.0" promptText="select time  " style="-fx-background-color: white;" />
+      <Label layoutX="189.0" layoutY="371.0" prefHeight="30.0" prefWidth="78.0" text="Total Fee">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtfee" layoutX="336.0" layoutY="373.0" prefHeight="26.0" prefWidth="179.0" promptText="Fee" />
+      <TextField fx:id="txtseats" layoutX="140.0" layoutY="485.0" prefHeight="26.0" prefWidth="126.0" promptText="Available Seats " />
+      <TextField fx:id="txtbokseats" layoutX="497.0" layoutY="485.0" prefHeight="26.0" prefWidth="126.0" promptText="Booked seats" />
+      <Label layoutX="48.0" layoutY="489.0" prefHeight="18.0" prefWidth="50.0" text="Seats">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="343.0" layoutY="484.0" prefHeight="27.0" prefWidth="112.0" text="Booked seats">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="83.0" layoutY="588.0" mnemonicParsing="false" onAction="#doSave" style="-fx-background-color: black;" text="Save" textFill="WHITE" />
+      <Button layoutX="199.0" layoutY="588.0" mnemonicParsing="false" onAction="#doUpdate" style="-fx-background-color: black;" text="Update" textFill="WHITE" />
+      <Button layoutX="336.0" layoutY="588.0" mnemonicParsing="false" onAction="#doDelete" style="-fx-background-color: Black;" text="Delete" textFill="WHITE" />
+      <Label alignment="CENTER" prefHeight="54.0" prefWidth="700.0" text="Batch Master ">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.42105263471603394" green="0.41793373227119446" blue="0.41793373227119446" />
+               </color></DropShadow>
+         </effect>
+      </Label>
+      <Button layoutX="463.0" layoutY="588.0" mnemonicParsing="false" onAction="#doNew" style="-fx-background-color: black;" text="New" textFill="WHITE" />
+      <Button layoutX="579.0" layoutY="588.0" mnemonicParsing="false" onAction="#doGoback" style="-fx-background-color: black;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
